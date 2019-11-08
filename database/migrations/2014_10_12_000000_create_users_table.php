@@ -19,14 +19,6 @@ class CreateUsersTable extends Migration
             $table->string('name');
         });
 
-        //DB::table("users")->insert([["name" => "holhen"], ["name" => "fleurania"], ["name" => "admin"], ["name" => "rabit"]]);
-        $data = array(
-            array("name" => "holhen"),
-            array("name" => "fleurania"),
-            array("name" => "admin"),
-            array("name" => "rabit")
-        );
-        User::insert($data);
     }
 
     /**
